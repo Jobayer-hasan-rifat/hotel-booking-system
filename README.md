@@ -118,14 +118,15 @@ cd backend
 touch .env  # On Windows: type nul > .env
 ```
 
-Add the following environment variables to `.env`:
+Create a `.env` file in the `backend` directory and add the following environment variables:
 
 ```env
-PORT=5001
-MONGODB_URI=mongodb://localhost:27017/hotel-booking
-JWT_SECRET=your_jwt_secret_key_here_make_it_very_long_and_secure_for_production
-JWT_EXPIRE=7d
-NODE_ENV=development
+# Example .env file (create your own with proper values)
+PORT=<your-port>
+MONGODB_URI=<your-mongodb-uri>
+JWT_SECRET=<your-secret-key>
+JWT_EXPIRE=<token-expiry-time>
+NODE_ENV=<development-or-production>
 ```
 
 **Important:** 
@@ -166,10 +167,8 @@ npm start
 
 ## 🔑 Default Admin Credentials
 
-The application automatically creates a default admin account on first run:
-
-- **Email:** `admin@mybook.com`
-- **Password:** `admin123`
+The application automatically creates a default admin account on first run.
+Please check your database seeding files for the default credentials or create a new admin user.
 
 **Access Admin Dashboard:** `http://localhost:3000/admin/login`
 
