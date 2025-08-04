@@ -84,7 +84,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     console.log('Default admin credentials:');
-    console.log('Email: admin@mybook.com');
+    console.log('Email: admin@gmail.com');
     console.log('Password: admin123');
   });
 })
